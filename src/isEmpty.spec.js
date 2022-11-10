@@ -1,5 +1,5 @@
 import isEmpty from './isEmpty';
 
 test('identifies null as empty', () => {
-  expect(isEmpty(null)).toBeTrue();
+  expect(isEmpty(null)).toBe(true);
 });

@@ -1,4 +1,6 @@
-# Student template
+# COMP.SE.200 Assignment - utils library
+
+[![Coverage Status](https://coveralls.io/repos/github/juliusstoerrle/COMP.SE.200-2022-2023-1/badge.svg?branch=main)](https://coveralls.io/github/juliusstoerrle/COMP.SE.200-2022-2023-1?branch=main)
 
 ## Purpose of this repository
 

@@ -1,3 +1,5 @@
+/** @author Joonas Salojärvi*/
+
 import {expect, test} from '@jest/globals';
 import '../defaultTo';
 

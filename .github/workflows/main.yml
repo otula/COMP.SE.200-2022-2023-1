@@ -16,27 +16,11 @@ jobs:
       with:
         node-version: 18.x
 
-    - name: npm install
+    - name: npm install, npm test
       run: |
         npm install
-  
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    needs: build
-    continue-on-error: true
-
-    steps:
-    - name: npm test
-      run: |
         npm test
 
-  coveralls:
-    name: Coveralls
-    runs-on: ubuntu-latest
-    needs: test
-
-    steps:
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:

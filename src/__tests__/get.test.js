@@ -51,3 +51,8 @@ test('Get nested array value with array of keys including null', () => {
     const resolved = get(dno, ['d', null, '0'], 'default');
     expect(resolved).toEqual('default');
 });
+
+test('Getting value of null should return default', () => {
+    const resolved = get(null, ['d', '0'], 'default');
+    expect(resolved).toEqual('default');
+});

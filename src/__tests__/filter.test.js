@@ -55,3 +55,16 @@ test('Filter objects with predicate b == undefined', () => {
     expect(newArr[0].a).toEqual(1);
     expect(newArr[0].b).toEqual(undefined);
 })
+
+test('Filter null with predicate b == undefined', () => {
+    const newArr = filter(null, (obj) => obj.b == undefined);
+
+    expect(newArr.length).toEqual(0);
+})
+
+
+test('Filter with always false predicate should have length of 0', () => {
+    const newArr = filter(numArr, (obj) => false);
+
+    expect(newArr.length).toEqual(0);
+})

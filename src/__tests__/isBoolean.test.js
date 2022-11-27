@@ -43,3 +43,8 @@ test('Undefined should not be boolean', () => {
     const resolved = isBoolean(undefined);
     expect(resolved).toEqual(false);
 })
+
+test('new Object should not be boolean', () => {
+    const resolved = isBoolean(new Object(null));
+    expect(resolved).toEqual(false);
+})

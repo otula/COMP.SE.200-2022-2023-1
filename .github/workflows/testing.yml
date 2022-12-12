@@ -21,7 +21,9 @@ jobs:
 
       - name: test coveralls
         run: npm run test-coveralls
-      - name: Coveralls
+
+      - name: Publish coverage to coveralls.io
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: MangoAPI.Tests/TestResults/coverage.info

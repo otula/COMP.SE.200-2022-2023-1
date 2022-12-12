@@ -1,5 +1,7 @@
 # Student template
 
+[![Coverage Status](https://coveralls.io/repos/github/lotila/COMP.SE.200-2022-2023-1/badge.svg?branch=main)](https://coveralls.io/github/lotila/COMP.SE.200-2022-2023-1?branch=main)
+
 ## Purpose of this repository
 
 This is a project template for students participating in Software Testing course

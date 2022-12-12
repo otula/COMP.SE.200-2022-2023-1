@@ -1,6 +1,6 @@
 name: Unit Tests
 
-on: [pull_request]
+on: [push, pull_request]
 
 jobs:
   tests:
@@ -18,3 +18,12 @@ jobs:
         run: npm install
       - name: tests
         run: npm test
+
+      - name: test coveralls
+        run: npm run test-coveralls
+
+      - name: Publish coverage
+        if: always()
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

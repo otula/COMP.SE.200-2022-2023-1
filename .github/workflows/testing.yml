@@ -23,6 +23,7 @@ jobs:
         run: npm run test-coveralls
 
       - name: Publish coverage to coveralls.io
+        if: always()
         uses: coverallsapp/github-action@master
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}

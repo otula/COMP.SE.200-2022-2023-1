@@ -7,7 +7,7 @@
   "scripts": {
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "test-coveralls": "jest --coverage && coveralls < coverage/lcov.info"
+    "test-coveralls": "jest --collectCoverage --ci"
   },
   "jest": {
     "collectCoverageFrom": [

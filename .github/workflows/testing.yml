@@ -19,8 +19,8 @@ jobs:
       - name: tests
         run: npm test
 
-      - name: update coverage badge
-        run: npx update-badge
+      - name: test coveralls
+        run: npm run test-coveralls
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:

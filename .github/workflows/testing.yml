@@ -18,8 +18,9 @@ jobs:
         run: npm install
       - name: tests
         run: npm test
-      - name: make test-coverage
-        run: make test-coverage
+
+      - name: update coverage badge
+        run: npx update-badge
       - name: Coveralls
         uses: coverallsapp/github-action@master
         with:

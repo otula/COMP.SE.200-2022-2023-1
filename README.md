@@ -1,4 +1,6 @@
-# Student template
+# Student assignment from template
+
+[![Coverage Status](https://coveralls.io/repos/github/kkemppi/COMP.SE.200-2022-2023-1/badge.svg?branch=main)](https://coveralls.io/github/kkemppi/COMP.SE.200-2022-2023-1?branch=main)
 
 ## Purpose of this repository
 

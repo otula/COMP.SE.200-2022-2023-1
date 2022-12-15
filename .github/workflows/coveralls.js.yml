@@ -16,12 +16,11 @@ jobs:
       with:
         node-version: 18.x
 
-    - name: npm install, npm test
+    - name: npm install, make test-coverage
       continue-on-error: true
       run: |
         npm install
-        npm test
-        npm coverage
+        make test-coverage
     - name: Coveralls
       uses: coverallsapp/github-action@master
       with:

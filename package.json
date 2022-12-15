@@ -24,7 +24,7 @@
   "c8": {
     "all": true,
     "include": [
-      "src/*.js"
+      "src/eq.js"
     ]
   }
 }

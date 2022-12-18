@@ -55,7 +55,8 @@ describe('#isEmpty', function(){
     });
 
     it('filled buffer is not empty', function(){
-        expect(isEmpty(Buffer.alloc(3))).to.equal(true);
+        const buf = Buffer.alloc(6)
+        expect(isEmpty(buf)).to.equal(false);
     });
 
     it('empty arguments is empty', function(){
@@ -67,7 +68,6 @@ describe('#isEmpty', function(){
 
     it('filled arguments is not empty', function(){
         function test(a, b, c) {
-            console.log(arguments.length)
             expect(isEmpty(arguments)).to.equal(false);
         };
         test('a', 'b', 'c');

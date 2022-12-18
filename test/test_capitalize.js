@@ -28,8 +28,4 @@ describe('#capitalize', function(){
         const expected = "12";
         expect(capitalize(testString)).to.equal(expected);
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> f081ad233d7894ed9f319cd6d7083ab859d3d16f

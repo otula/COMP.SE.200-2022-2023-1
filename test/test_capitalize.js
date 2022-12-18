@@ -23,5 +23,9 @@ describe('#capitalize', function(){
         const expected = "/test4";
         expect(capitalize(testString)).to.equal(expected);
     });
-
+    it('should work with integer values', function() {
+        const testString = 12;
+        const expected = "12";
+        expect(capitalize(testString)).to.equal(expected);
+    });
 });

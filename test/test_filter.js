@@ -1,10 +1,11 @@
 import { expect } from 'chai';
 import filter from '../src/filter.js';
 
-describe('#capitalize', function(){
-    it('should capitalize the first letter', function(){
-        const testString = "test1";
-        const expected = "Test1";
-        expect(capitalize(testString)).to.equal(expected);
+describe('#filter', function(){
+    it('should filter results that do not fulfill the predicate', function(){
+        const testList = [{'name':'test1','pass': true}, {'name':'test2', 'pass': false}];
+        const expected = [{'name':'test1','pass': true}];
+        
+        expect(filter(testList, ({pass}) => pass)).to.equal(expected);
     });
 });

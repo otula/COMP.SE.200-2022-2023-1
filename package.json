@@ -24,7 +24,16 @@
   "c8": {
     "all": true,
     "include": [
-      "src/*.js"
+      "src/capitalize.js",
+      "src/clamp.js",
+      "src/eq.js",
+      "src/filter.js",
+      "src/get.js",
+      "src/isDate.js",
+      "src/isEmpty.js",
+      "src/reduce.js",
+      "src/toNumber.js",
+      "src/toString.js"
     ]
   }
 }
